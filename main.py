@@ -1,7 +1,7 @@
 from modules.gpio_wrapper import GpioWrapper
 import time
 
-unit = 1
+unit = 2
 r1 = 17
 y1 = 5
 g1 = 26
@@ -18,7 +18,7 @@ while True:
     gpio.yellow1_on()
     time.sleep(unit)
 
-    gpio.yellow1_off
+    gpio.yellow1_off()
     gpio.green1_on()
     time.sleep(unit * 5)
 
@@ -28,6 +28,8 @@ while True:
 
     gpio.yellow1_off()
     gpio.red1_on()
+    time.sleep(unit / 2)
+
     gpio.red2_off()
     gpio.yellow2_on()
     time.sleep(unit)
@@ -42,3 +44,4 @@ while True:
 
     gpio.yellow2_off()
     gpio.red2_on()
+    time.sleep(unit / 2)
