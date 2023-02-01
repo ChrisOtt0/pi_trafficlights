@@ -2,12 +2,12 @@ from modules.gpio_wrapper import GpioWrapper
 import time
 
 unit = 1
-r1 = 0
-y1 = 0
-g1 = 0
-r2 = 0
-y2 = 0
-g2 = 0
+r1 = 17
+y1 = 5
+g1 = 26
+r2 = 18
+y2 = 24
+g2 = 12
 
 gpio = GpioWrapper(r1, y1, g1, r2, y2, g2)
 gpio.red1_on()
