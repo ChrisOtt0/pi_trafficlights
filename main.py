@@ -28,7 +28,7 @@ while True:
 
     gpio.yellow1_off()
     gpio.red1_on()
-    time.sleep(unit / 2)
+    time.sleep(unit)
 
     gpio.red2_off()
     gpio.yellow2_on()
@@ -44,4 +44,4 @@ while True:
 
     gpio.yellow2_off()
     gpio.red2_on()
-    time.sleep(unit / 2)
+    time.sleep(unit)
